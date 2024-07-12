@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberQuest</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favico.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body,
+        html {
+            scroll-behavior: smooth !important;
+        }
+
+        .pts {
+            font-family: "PT Serif", serif;
+        }
+
+        .bg-gradiant {
+            background-image: linear-gradient(rgba(255, 255, 255, 0), #fff), url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d6d6d6' fill-opacity='0.62'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        ::selection {
+            background-color:  rgb(8, 86, 57);
+            color: #ffffff;
+        }
+
+        ::-moz-selection {
+            background-color:  rgb(8, 86, 57);
+            color: #ffffff;
+        }
+
+        ::-webkit-selection {
+            background-color:  rgb(8, 86, 57);
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+    <header class="border-b-2">
+        <div class="mx-auto max-w-5xl px-6 py-4 flex flex-col md:flex-row gap-2 md:gap-8 items-center">
+            <a href="/" class="font-bold text-xl">
+                <span class="text-green-800"></span>
+            </a>
+            <nav>
+                <ul class="flex gap-4 text-sm md:text-base">
+                    <li>
+                        <a href="#features" class="hover:text-green-800">Features</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="hover:text-green-800">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex ml-0 md:ml-auto gap-2 md:gap-8 items-center">
+                <a href="https://www.youtube.com/watch?v=5TApYNbFKnk"
+                    class="text-sm md:text-base bg-green-800 rounded text-white font-bold py-2 px-6 hover:bg-green-600">Demo</a>
+            </div>
+        </div>
+    </header>
+    <section class="relative">
+        <div class="z-10">
+            <div class="mx-auto max-w-5xl px-6 md:px-2 py-10 md:py-24 flex flex-col gap-6 items-center">
+                <h1 class="text-4xl font-bold text-center max-w-[600px]">
+                    CyberQuest
+                </h1>
+                <p class="text-gray-600 text-base md:text-lg text-center max-w-[600px]"> Learn cybersecurity in a fun way !</p>
+                <div class="flex gap-4 items-center text-center">
+                    <div class="flex ml-0 md:ml-auto gap-2 md:gap-8 items-center">
+                        <a href="#features"
+                            class="text-sm md:text-base bg-green-800 rounded text-white font-bold py-2 px-6 hover:bg-green-600"></i>Discover
+                        </a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="-z-10 absolute top-0 w-full h-[200px] bg-gradiant">
+
+        </div>
+    </section>
+    <section class="px-6 md:px-2">
+        <div data-aos="fade-up"
+            class="relative mx-auto sm:px-7 px-4 max-w-screen-xl py-10 flex items-center aos-init aos-animate">
+            <img src="./images/Explore.png" class="mx-auto w-full max-w-[1000px] rounded shadow-2xl" alt="">
+        </div>
+    </section>
+    <section>
+        <div class="mx-auto sm:px-7 px-4 max-w-screen-xl py-20 flex flex-col gap-10" id="features">
+            <div class="flex flex-col gap-4">
+                <h2 class="text-4xl font-bold text-center">
+                    Main Features
+                </h2>
+                <p class="text-base md:text-lg text-center max-w-[600px] mx-auto">
+                </p>
+            </div>
+                <div class="flex flex-row gap-5 justify-center flex-wrap mx-auto items-center">
+                    <!-- Enter challenges -->
+                    <div class="flex flex-col text-center max-w-[340px]">
+                        <div class="border-2 border-green-50 bg-green-100 mx-auto rounded-full text-green-800 w-12 h-12 flex">
+                            <i class="bi bi-1-circle-fill text-2xl my-auto mx-auto"></i>
+                        </div>
+                        <h2 class="mt-4 text-xl font-semibold text-gray-800">Enter challenges</h2>
+                        <p class="mt-2 text-gray-500 text-sm">
+                            Enter challenges to learn new concepts in cybersecurity and hacking to improve your skills.
+                        </p>
+                        <div class="flex justify-center mt-3">
+                            <a href="images/Challenges.png" class="screenshot-link" target="_blank">
+                                <img src="images/Challenges.png" alt="Challenges Screenshot" class="screenshot-thumb">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Follow your score and progress -->
+                    <div class="flex flex-col text-center max-w-[340px]">
+                        <div class="border-2 border-green-50 bg-green-100 mx-auto rounded-full text-green-800 w-12 h-12 flex">
+                            <i class="bi bi-2-circle-fill text-2xl my-auto mx-auto"></i>
+                        </div>
+                        <h2 class="mt-4 text-xl font-semibold text-gray-800">Follow your score and progress</h2>
+                        <p class="mt-2 text-gray-500 text-sm">
+                            Track your score and progress in the challenges to see how you are improving.
+                        </p>
+                        <div class="flex justify-center mt-3">
+                            <a href="images/Dashboard.png" class="screenshot-link" target="_blank">
+                                <img src="images/Dashboard.png" alt="Follow your score and progress Screenshot" class="screenshot-thumb">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-50 flex justify-center items-center" id="about">
+        <div class="bg-gray-50 p-6 rounded-lg text-center max-w-xs">
+            <h2 class="text-2xl font-bold mb-2">About me</h2>
+            <img src="images/profile_pic.png" alt="Photo de profil" class="w-64 h-64 rounded-full mx-auto mb-4 border-solid border-4 border-green-800 shadow-lg">
+            <h3 class="text-xl font-semibold">Emma LATEYRON</h3>
+            <p>C#22</p><a href="https://www.holbertonschool.fr/campus/bordeaux" class="text-green-800">Holberton School</a> - Bordeaux </p> <br>
+            <p class="text-gray-600">
+        </div>
+    </section>
+    <footer>
+        <div class="px-2 py-20 mx-auto max-w-7xl">
+            <div class="pt-12 border-t border-gray-300 flex flex-col md:flex-row gap-10 items-center">
+                <div class="text-black flex flex-col">
+                    <a href="/" class="font-bold text-xl mx-auto md:mx-0">
+                        <span class="text-green-800"></span>
+                    </a>
+                    <p class="mt-2 text-sm text-gray-500 ">
+                        A Holberton School end-of-year project.
+                    </p>
+                </div>
+                <nav class="ml-0 md:ml-auto">
+                    <ul class="flex flex-row gap-4">
+                        <li>
+                            <a href="#features" class="hover:text-green-500">Features</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="hover:text-green-500">About</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/emma-33" class="hover:text-green-500">My Github</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </footer>
+</body>
+
+</html>
